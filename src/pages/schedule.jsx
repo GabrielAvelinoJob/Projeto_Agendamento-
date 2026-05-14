@@ -9,7 +9,7 @@ function Schedule() {
   ]
 
   return (
-    <div className="min-h-screen bg-zinc-900 text-white p-10">
+    <div className="min-h-screen #09090b text-white p-10">
       <h1 className="text-4xl font-bold text-center">
         Agendamento
       </h1>

@@ -3,14 +3,16 @@ import { services } from '../data/services'
 
 function Home() {
   return (
-    <div className="min-h-screen bg-zinc-900 text-white p-10">
+    <div className="min-h-screen 
+    #09090b
+    text-white p-10">
       <header className="text-center">
         <h1 className="text-5xl font-bold">
-          Gestão de agendamento GMA
+          Nossos serviços
         </h1>
 
         <p className="text-zinc-400 mt-4">
-          Escolha um serviço
+          Escolha o serviço ideal para você
         </p>
       </header>
 
