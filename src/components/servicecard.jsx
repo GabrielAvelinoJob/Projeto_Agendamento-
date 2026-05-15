@@ -2,24 +2,55 @@ import { Link } from 'react-router-dom'
 
 function ServiceCard({ service }) {
   return (
-    <div className="bg-zinc-800 p-6 rounded-2xl w-72 shadow-lg">
-      <h2 className="text-2xl font-bold">
+    <div
+      className="
+      w-[380px]
+      bg-zinc-900
+      border border-zinc-800
+      rounded-3xl
+      p-8
+      transition-all
+      duration-300
+      hover:border-yellow-500/30
+      hover:shadow-[0_0_30px_rgba(255,170,0,0.10)]
+      hover:-translate-y-1
+      "
+    >
+
+      <h2 className="text-3xl font-bold">
         {service.name}
       </h2>
 
-      <p className="text-zinc-400 mt-2">
-        {service.duration}
+      <p className="text-zinc-400 mt-5 leading-8 text-lg">
+        {service.description}
       </p>
 
-      <p className="text-yellow-500 text-xl mt-4 font-semibold">
-        {service.price}
-      </p>
+      <div className="border-t border-zinc-800 my-8"></div>
 
-     <Link to="/agendamento">
-  <button className="mt-6 w-full bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-3 rounded-xl transition">
-    Agendar
-  </button>
-</Link>
+      <div className="flex items-center justify-between">
+
+        <span className="text-yellow-500 text-4xl font-bold">
+          {service.price}
+        </span>
+
+        <Link to="/agendamento">
+          <button
+            className="
+    bg-black
+    px-6
+    py-3
+    rounded-2xl
+    font-semibold
+    transition
+    hover:bg-yellow-500
+    "
+          >
+            Selecionar
+          </button>
+        </Link>
+
+      </div>
+
     </div>
   )
 }

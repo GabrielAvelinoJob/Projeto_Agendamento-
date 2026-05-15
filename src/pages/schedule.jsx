@@ -1,4 +1,12 @@
+import { useNavigate } from 'react-router-dom'
+import btvoltar from '../assets/voltar.png'
+import { useState } from 'react'
+
 function Schedule() {
+  const navigate = useNavigate()
+  const [selectedTime, setSelectedTime] = useState('')
+
+
   const times = [
     '09:00',
     '10:00',
@@ -9,7 +17,20 @@ function Schedule() {
   ]
 
   return (
-    <div className="min-h-screen #09090b text-white p-10">
+    <div className="relative min-h-screen bg-[#09090b] text-white px-6 py-24">
+
+      <button
+        onClick={() => navigate(-1)}
+        className="absolute top-4 left-4 md:top-6 md:left-6"
+      >
+        <img
+          src={btvoltar}
+          alt="Voltar"
+          className="w-24 md:w-20 rounded-2xl hover:scale-105 transition"
+        />
+
+      </button>
+
       <h1 className="text-4xl font-bold text-center">
         Agendamento
       </h1>
@@ -48,7 +69,18 @@ function Schedule() {
             {times.map((time) => (
               <button
                 key={time}
-                className="bg-zinc-800 p-4 rounded-xl hover:bg-yellow-500 hover:text-black transition"
+                onClick={() => setSelectedTime(time)}
+                className={`
+    p-4
+    rounded-xl
+    font-semibold
+    transition
+
+    ${selectedTime === time
+                    ? 'bg-yellow-500 text-black'
+                    : 'bg-zinc-800 hover:bg-zinc-700 text-white'
+                  }
+  `}
               >
                 {time}
               </button>
@@ -56,7 +88,9 @@ function Schedule() {
           </div>
         </div>
 
-        <button className="w-full mt-10 bg-yellow-500 text-black font-bold py-4 rounded-xl hover:bg-yellow-400 transition">
+        <button 
+         onClick={() => navigate('/sucesso')}
+        className="w-full mt-10 bg-yellow-500 text-black font-bold py-4 rounded-xl hover:bg-yellow-400 transition">
           Confirmar Agendamento
         </button>
       </div>
