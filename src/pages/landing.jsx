@@ -13,11 +13,11 @@ function Landing() {
         />
 
         <h1 className="text-6xl md:text-7xl tracking-tight">
-          GMA
+          Bem-vindo ao GRAVIX
         </h1>
 
         <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
-          Agende seu horário com profissionais de excelência
+          Sua experiência de agendamento começa aqui.
         </p>
 
         <Link to="/servicos">
