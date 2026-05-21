@@ -4,6 +4,9 @@ import Landing from './pages/landing'
 import Home from './pages/home'
 import Schedule from './pages/schedule'
 import Success from './pages/sucesso'
+import LoginAdmin from './pages/LoginAdmin'
+import Dashboard from './pages/Dashboard'
+import Agendamentos from './pages/Agendamentos'
 
 function App() {
   return (
@@ -22,11 +25,15 @@ function App() {
         />
 
         <Route path="/sucesso" element={<Success />} />
-      </Routes>
-
       
 
-   
+      <Route path="/admin" element={<LoginAdmin />} />
+
+      <Route path="/dashboard" element={<Dashboard />} />
+
+      <Route path="/agendamentos" element={<Agendamentos/>} />
+</Routes>
+
     </BrowserRouter>
   )
 }

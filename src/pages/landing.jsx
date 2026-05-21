@@ -4,6 +4,21 @@ import tesoura from '../assets/tesoura.png'
 function Landing() {
   return (
     <div className="min-h-screen bg-zinc-950 text-white flex items-center justify-center p-8">
+
+      <Link
+        to="/admin"
+        className="
+        absolute
+        top-6
+        right-6
+        hover:bg-yellow-400
+        transition
+        bg-yellow-500  text-black  py-1 px-5 rounded-2xl
+        "
+      >
+        ⚙ Admin
+      </Link>
+      
       <div className="text-center max-w-2xl">
 
         <img
