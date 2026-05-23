@@ -29,11 +29,15 @@ function Dashboard() {
                         📅 Agendamentos
                     </button>
 
-                    <button className="w-full text-left hover:bg-zinc-800 p-4 rounded-xl transition">
+                    <button
+                    onClick={() => navigate('/clientes')}
+                    className="w-full text-left hover:bg-zinc-800 p-4 rounded-xl transition">
                         👥 Clientes
                     </button>
 
-                    <button className="w-full text-left hover:bg-zinc-800 p-4 rounded-xl transition">
+                    <button
+                    onClick={() => navigate('/configuracoes')}
+                    className="w-full text-left hover:bg-zinc-800 p-4 rounded-xl transition">
                         ⚙ Configurações
                     </button>
 

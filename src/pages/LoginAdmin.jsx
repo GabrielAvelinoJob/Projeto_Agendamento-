@@ -117,6 +117,43 @@ function LoginAdmin() {
           Entrar
         </button>
 
+        <div className="mt-5">
+
+  <p
+    onClick={() => navigate('/recuperar-senha')}
+    className="
+    text-center
+    text-zinc-400
+    cursor-pointer
+    hover:text-yellow-500
+    transition
+    "
+  >
+    Esqueceu sua senha?
+  </p>
+
+</div>
+
+        <div className="mt-6 text-center">
+
+  <button
+    onClick={() => navigate('/cadastro-admin')}
+    className="
+    w-full
+    bg-yellow-500
+    hover:bg-yellow-400
+    font-bold
+    text-black
+    py-4
+    rounded-xl
+    transition
+    "
+  >
+    Cadastrar-se
+  </button>
+
+</div>
+
       </div>
     </div>
   )
