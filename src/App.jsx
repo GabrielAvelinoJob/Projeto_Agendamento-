@@ -13,6 +13,7 @@ import Configuracoes from './pages/Configuracoes'
 import CadastroAdmin from './pages/CadastroAdmin'
 import RecuperarSenha from './pages/RecuperarSenha'
 import VerificarCodigo from './pages/Verificarcodigo'
+import Disponibilidade from './pages/Disponibilidade'
 
 function App() {
   return (
@@ -50,6 +51,8 @@ function App() {
         <Route path="/recuperar-senha" element={<RecuperarSenha />} />
 
         <Route path="/verificar-codigo" element={<VerificarCodigo />} />
+        
+        <Route path="/disponibilidade" element={<Disponibilidade />} />
 
       </Routes>
 

@@ -30,14 +30,20 @@ function Dashboard() {
                     </button>
 
                     <button
-                    onClick={() => navigate('/clientes')}
-                    className="w-full text-left hover:bg-zinc-800 p-4 rounded-xl transition">
+                        onClick={() => navigate('/clientes')}
+                        className="w-full text-left hover:bg-zinc-800 p-4 rounded-xl transition">
                         👥 Clientes
                     </button>
 
                     <button
-                    onClick={() => navigate('/configuracoes')}
-                    className="w-full text-left hover:bg-zinc-800 p-4 rounded-xl transition">
+                        onClick={() => navigate('/disponibilidade')}
+                        className="w-full text-left hover:bg-zinc-800 p-4 rounded-xl transition">
+                        📅 Disponibilidade
+                    </button>
+
+                    <button
+                        onClick={() => navigate('/configuracoes')}
+                        className="w-full text-left hover:bg-zinc-800 p-4 rounded-xl transition">
                         ⚙ Configurações
                     </button>
 
